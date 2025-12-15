@@ -1,0 +1,179 @@
+User Story 1: Scan POS Tracking Number to Add Item
+
+As a RTV Area warehouse clerk
+I want to scan a POS Tracking Number to quickly add an item to the worklist
+So that I can efficiently process returned items without manual data entry
+
+Description
+When processing returned items in the RTV area, warehouse clerks need to quickly add items to the system for tracking and disposition. By enabling barcode scanning of POS Tracking Numbers, associates can rapidly input items while maintaining accuracy.
+The system should auto-populate available item details when a valid POS Tracking Number is scanned, reducing the amount of manual data entry required and speeding up the intake process.
+Acceptance Criteria
+AC1: Successful Scan and Item Addition
+Given I am on the "Add Item to Worklist" screen
+When I scan a valid POS Tracking Number (e.g., TRK-WAR-870506181)
+Then the tracking number field is automatically populated
+And the system retrieves and displays available item information (description, vendor, etc.)
+And I can complete any remaining required fields
+And I can click "Add to Worklist" to successfully add the item
+AC2: Invalid Tracking Number Handling
+Given I am on the "Add Item to Worklist" screen
+When I scan an invalid or non-existent POS Tracking Number
+Then the system displays an error message "Invalid tracking number - please verify and try again"
+And the tracking number field is cleared
+And I can attempt to scan again
+AC3: Duplicate Item Prevention
+Given I am on the "Add Item to Worklist" screen
+When I scan a POS Tracking Number that already exists in the current worklist
+Then the system displays a warning message "Item already in worklist - added on [date]"
+And I have the option to "View Existing Item" or "Cancel"
+And the item is not duplicated in the worklist
+AC4: Auto-Population of Item Details
+Given I scan a valid POS Tracking Number
+When the system finds matching item information
+Then the following fields are automatically populated:
+Item ID
+Item Description
+Department Number
+Quantity
+Location
+Disposition Type
+Sell Price
+On Hand Inventory
+Vendor Name
+And I can edit the following fields if needed
+Disposition Type
+Vendor Name
+Quantity
+Location
+AC5: Manual Entry Fallback
+Given I am on the "Add Item to Worklist" screen
+When the barcode scanner is not working or unavailable
+Then I can manually type the POS Tracking Number in the field
+And the system behaves the same way as if I had scanned the number
+AC6: Scan Feedback and User Experience
+Given I attempt to scan a POS Tracking Number
+When the scan is successful
+Then I hear a confirmation beep (if audio is enabled)
+And the scanned number appears in the field immediately
+When the scan is unsuccessful
+Then I hear an error tone (if audio is enabled)
+And I can attempt to scan again
+AC7: Required Field Validation
+Given I have scanned a POS Tracking Number and auto-populated available fields
+When I click "Add to Worklist"
+Then the system validates that all required fields are complete
+And displays specific error messages for any missing required fields
+
+User Story 2: Initiate Salvage Workflow from NSI Entry
+As a RTV Clerk 
+I want to start the workflow for a salvage disposition item
+So that the item moves to NSI Maintenance for further handling
+Description
+When an item in NSI Entry has been marked with a "Salvage" disposition, the RTV Clerk needs to initiate the workflow to move it to the next stage. The system should automatically route salvage items based on business rules.
+Acceptance Criteria
+AC1: Start Workflow for Salvage Item
+Given I have an item in NSI Entry with disposition "Salvage"
+And the item status is "Approved"
+When I select the item and click "Start Workflow"
+Then the system moves the item from "NSI Entry" to "NSI Maintenance"
+And the item status updates to "In Process"
+And a workflow log entry is created with timestamp and user ID
+AC2: System Auto-Routing (Background Process)
+Given an item has moved to NSI Maintenance with Salvage disposition
+When the system processes the workflow change
+Then the system automatically performs a program change to re-route to Return Center
+And an RC document is automatically generated in the system
+And the item status updates to "Awaiting RC Processing"
+AC3: Workflow Confirmation
+Given I have initiated a salvage workflow
+When the system completes the routing
+Then the item no longer appears in my NSI Entry worklist
+And I can view the updated item status in the system
+
+User Story 3: Generate and Print RC Documentation
+As a RTV Clerk
+I want to select document categories and print RC documents
+So that salvage items have proper documentation for shipment and tracking
+Description
+After determining pre-sorting requirements, associates must select the appropriate document category which opens a document modal allowing them to generate and print the required RC (Return Center) documentation.
+Acceptance Criteria
+AC1: Document Category Selection
+Given I have selected pre-sorting requirements for a salvage item
+When I proceed to document generation
+Then I see a dropdown field "Document Category" with options such as:
+•	Shipping Information
+•	Packages
+•	Hazmat Container
+•	Shipping Documents
+•	Labels
+AC2: Document Modal Opening
+Given I have selected a document category
+When the system created the RC Document in the background                                                          
+Then the document model window opens with context
+And I can see the generated document
+AC3: RD Document Printing
+Given the document modal is open and RD document is displayed
+When I see a “Print” button 
+Then I can click the button to trigger the document to be printed
+And the document contains all relevant item details, tracking numbers, and category information
+
+User Story 4: Generate Master Shipment and Print Shipping Documents
+As a RTV Clerk
+I want to automatically generate master shipment and print shipping documents
+So that salvage items can be shipped to the appropriate destination with proper documentation.
+Description
+When the RD document is generated, the system automatically creates a master shipment and provides options to print the Bill of Lading (BOL), shipment label, and logline documents all within the same document modal.
+Acceptance Criteria
+AC1: Automatic Master Shipment Generation
+Given the RD document has been successfully generated
+When the system completes the RD document creation
+Then the system automatically generates a master shipment record
+And a unique shipment number is assigned
+AC2: Shipping Documents Available
+Given the master shipment has been generated
+When I am in the document modal
+Then I see two additional document to select for printing:
+•	“BOL" (Bill of Lading)
+•	"Shipment Label"
+And I see a tab option to Logline 
+AC3: BOL Printing
+Given the master shipment is generated
+When I click in the check box to select the “BOL” to print
+Then the system sends the BOL to the printer 
+And the BOL contains shipment number, item details, destination, and required signatures sections
+AC4: Shipment Label Printing
+Given the master shipment is generated
+When I click in the check box to select the “Shipment Label” to print 
+Then the system sends the shipping labels to the printer 
+And labels include barcode, shipment number, destination address, and handling instructions
+AC5: Logline Documents Printing
+Given the master shipment is generated
+When I tab to the “Logline” section in the document modal  
+Then the system shows the available documents to logline 
+And I select “Process Logline”                                                                                                                                    And documents include detailed item manifest and tracking information
+AC6: Complete Processing Confirmation
+Given I have printed, and loglined all required documents
+When I close the document modal
+Then the I am back in the main NSI Maintenance screen 
+And the shipment appears in the "Outbound Shipments" queue
+
+User Story 5: Reverse a transaction from NSI maintenance screen
+As a RTV Clerk
+I want to revert a transaction from maintenance page
+So that I can change the disposition
+Description
+When an item in NSI Entry has been processed and move to NSI Maintenance, the system should allow to revert to NSI Entry state.
+Acceptance Criteria
+AC1: Reverse button on 
+Given I have an item in NSI Maintenance in "awaiting RC" status
+And the item status is not "Processed"
+When I select the item and click "Reverse"
+Then the system moves the item from "NSI Maintenance" to "NSI Entry"
+And the item status updates to "Pending"
+And a workflow log entry is created with timestamp and user ID
+AC2: Allow change disposition and restart the workflow
+Given an item has moved to NSI Entry with "Pending" status
+When the user clicks disposition drop down
+And user selects a disposition "Destroy"
+And clicks on "Start workflow"
+Then the transaction is moved to "Pending approval" status in the NSI Maintenance.

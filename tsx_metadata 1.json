@@ -1,0 +1,1186 @@
+{
+  "extraction_metadata": {
+    "total_lines": 1382,
+    "screens_found": 6,
+    "state_variables_found": 8,
+    "top_level_handlers_found": 7,
+    "fields_with_generated_ids": 33
+  },
+  "screens": [
+    {
+      "component_name": "DashboardScreen",
+      "line_start": 130,
+      "line_end": 302,
+      "fields": [
+        {
+          "tsx_id": "dashboardField256",
+          "element_type": "input",
+          "input_type": "checkbox",
+          "screen_name": "DashboardScreen",
+          "section_title": "Pending Approvals - Manager Review Required",
+          "line_number": 256,
+          "id_generated": true,
+          "original_input_line": "<input type=\"checkbox\" />"
+        },
+        {
+          "tsx_id": "dashboardField267",
+          "element_type": "input",
+          "input_type": "checkbox",
+          "screen_name": "DashboardScreen",
+          "line_number": 267,
+          "id_generated": true,
+          "original_input_line": "<input type=\"checkbox\" />"
+        }
+      ],
+      "handlers": [
+        {
+          "function_name": "showNotification",
+          "trigger_element": "button",
+          "button_text": "Review",
+          "screen_name": "DashboardScreen",
+          "line_number": 220,
+          "is_stub": true
+        },
+        {
+          "function_name": "showNotification",
+          "trigger_element": "button",
+          "button_text": "View",
+          "screen_name": "DashboardScreen",
+          "line_number": 236,
+          "is_stub": true
+        },
+        {
+          "function_name": "showNotification",
+          "trigger_element": "button",
+          "button_text": "Approve",
+          "screen_name": "DashboardScreen",
+          "line_number": 276,
+          "is_stub": true
+        },
+        {
+          "function_name": "showNotification",
+          "trigger_element": "button",
+          "button_text": "Reject",
+          "screen_name": "DashboardScreen",
+          "line_number": 282,
+          "is_stub": true
+        },
+        {
+          "function_name": "setShowPendingApprovalsView",
+          "trigger_element": "button",
+          "button_text": "\u2190 Back to Recent Activity",
+          "screen_name": "DashboardScreen",
+          "line_number": 292,
+          "is_stub": false
+        }
+      ]
+    },
+    {
+      "component_name": "WorklistScreen",
+      "line_start": 305,
+      "line_end": 574,
+      "fields": [
+        {
+          "tsx_id": "newItemId",
+          "element_type": "input",
+          "input_type": "text",
+          "label": "Item ID",
+          "placeholder": "Enter NSI Item ID",
+          "screen_name": "WorklistScreen",
+          "section_title": "Add Item to Worklist",
+          "line_number": 355
+        },
+        {
+          "tsx_id": "newTrackingNumber",
+          "element_type": "input",
+          "input_type": "text",
+          "label": "POS Tracking Number",
+          "default_value": "TRK-306954",
+          "screen_name": "WorklistScreen",
+          "section_title": "Add Item to Worklist",
+          "line_number": 364
+        },
+        {
+          "tsx_id": "destroyLogNumber",
+          "element_type": "input",
+          "input_type": "text",
+          "label": "Destroy Log Number",
+          "placeholder": "Enter destroy log #",
+          "screen_name": "WorklistScreen",
+          "line_number": 373
+        },
+        {
+          "tsx_id": "filterByItemId",
+          "element_type": "input",
+          "input_type": "text",
+          "label": "Filter by Item ID",
+          "placeholder": "Enter Item ID",
+          "screen_name": "WorklistScreen",
+          "section_title": "Filter Worklist Items",
+          "line_number": 401,
+          "id_generated": true,
+          "original_input_line": "<input \n              type=\"text\" \n              style={{ width: '100%', padding: '8px', border: '1px solid #ddd', borderRadius: '5px', boxSizing: 'border-box' }}\n              placeholder=\"Enter Item ID\" \n            />"
+        },
+        {
+          "tsx_id": "filterByDisposition",
+          "element_type": "select",
+          "input_type": "select",
+          "label": "Filter by Disposition",
+          "screen_name": "WorklistScreen",
+          "section_title": "Filter Worklist Items",
+          "line_number": 409,
+          "id_generated": true,
+          "original_input_line": "<select style={{ width: '100%', padding: '8px', border: '1px solid #ddd', borderRadius: '5px', boxSizing: 'border-box' }}>"
+        },
+        {
+          "tsx_id": "filterByVendor",
+          "element_type": "select",
+          "input_type": "select",
+          "label": "Filter by Vendor",
+          "screen_name": "WorklistScreen",
+          "line_number": 420,
+          "id_generated": true,
+          "original_input_line": "<select style={{ width: '100%', padding: '8px', border: '1px solid #ddd', borderRadius: '5px', boxSizing: 'border-box' }}>"
+        },
+        {
+          "tsx_id": "filterByStatus",
+          "element_type": "select",
+          "input_type": "select",
+          "label": "Filter by Status",
+          "screen_name": "WorklistScreen",
+          "line_number": 429,
+          "id_generated": true,
+          "original_input_line": "<select style={{ width: '100%', padding: '8px', border: '1px solid #ddd', borderRadius: '5px', boxSizing: 'border-box' }}>"
+        },
+        {
+          "tsx_id": "worklistField472",
+          "element_type": "input",
+          "input_type": "checkbox",
+          "screen_name": "WorklistScreen",
+          "section_title": "Current Worklist Items",
+          "line_number": 472,
+          "id_generated": true,
+          "original_input_line": "<input type=\"checkbox\" />"
+        },
+        {
+          "tsx_id": "worklistField489",
+          "element_type": "input",
+          "input_type": "checkbox",
+          "screen_name": "WorklistScreen",
+          "line_number": 489,
+          "id_generated": true,
+          "original_input_line": "<input type=\"checkbox\" />"
+        },
+        {
+          "tsx_id": "worklistField498",
+          "element_type": "select",
+          "input_type": "select",
+          "screen_name": "WorklistScreen",
+          "line_number": 498,
+          "id_generated": true,
+          "original_input_line": "<select \n                      style={{ padding: '4px', fontSize: '12px', width: '100%', border: '1px solid #ddd', borderRadius: '3px' }}\n                      defaultValue={item.disposition}\n                      onChange={() =>"
+        },
+        {
+          "tsx_id": "worklistField514",
+          "element_type": "input",
+          "input_type": "number",
+          "screen_name": "WorklistScreen",
+          "line_number": 514,
+          "id_generated": true,
+          "original_input_line": "<input \n                      type=\"number\" \n                      style={{ padding: '4px', fontSize: '12px', width: '60px', border: '1px solid #ddd', borderRadius: '3px' }}\n                      defaultValue={item.quantity} \n                      min=\"1\"\n                    />"
+        },
+        {
+          "tsx_id": "worklistField551",
+          "element_type": "select",
+          "input_type": "select",
+          "screen_name": "WorklistScreen",
+          "line_number": 551,
+          "id_generated": true,
+          "original_input_line": "<select \n                      style={{ padding: '4px', fontSize: '12px', width: '100%', border: '1px solid #ddd', borderRadius: '3px' }}\n                      onChange={(e) =>"
+        }
+      ],
+      "handlers": [
+        {
+          "function_name": "showNotification",
+          "trigger_element": "button",
+          "button_text": "Refresh",
+          "screen_name": "WorklistScreen",
+          "line_number": 317,
+          "is_stub": true
+        },
+        {
+          "function_name": "showNotification",
+          "trigger_element": "button",
+          "button_text": "{auditQueueMode ? 'Show All Items' : 'Show Audit Queue'}",
+          "screen_name": "WorklistScreen",
+          "line_number": 323,
+          "is_stub": true
+        },
+        {
+          "function_name": "showNotification",
+          "trigger_element": "button",
+          "button_text": "\ufe0f Print",
+          "screen_name": "WorklistScreen",
+          "line_number": 340,
+          "is_stub": true
+        },
+        {
+          "function_name": "showNotification",
+          "trigger_element": "button",
+          "button_text": "Scan",
+          "screen_name": "WorklistScreen",
+          "line_number": 380,
+          "is_stub": true
+        },
+        {
+          "function_name": "addToWorklist",
+          "trigger_element": "button",
+          "button_text": "Add to Worklist",
+          "screen_name": "WorklistScreen",
+          "line_number": 386,
+          "is_stub": false
+        },
+        {
+          "function_name": "showNotification",
+          "trigger_element": "button",
+          "button_text": "\ufe0f Clear Filters",
+          "screen_name": "WorklistScreen",
+          "line_number": 438,
+          "is_stub": true
+        },
+        {
+          "function_name": "showNotification",
+          "trigger_element": "button",
+          "button_text": "Apply Filters",
+          "screen_name": "WorklistScreen",
+          "line_number": 444,
+          "is_stub": true
+        },
+        {
+          "function_name": "showNotification",
+          "trigger_element": "button",
+          "button_text": "Batch Actions",
+          "screen_name": "WorklistScreen",
+          "line_number": 458,
+          "is_stub": true
+        }
+      ]
+    },
+    {
+      "component_name": "MaintenanceScreen",
+      "line_start": 577,
+      "line_end": 920,
+      "fields": [
+        {
+          "tsx_id": "mode",
+          "element_type": "select",
+          "input_type": "select",
+          "label": "Mode:",
+          "screen_name": "MaintenanceScreen",
+          "line_number": 608,
+          "id_generated": true,
+          "original_input_line": "<select \n              style={{ padding: '8px', minWidth: '120px', border: '1px solid #ddd', borderRadius: '5px' }}\n              value={maintenanceMode}\n              onChange={(e) =>"
+        },
+        {
+          "tsx_id": "itemId",
+          "element_type": "input",
+          "input_type": "text",
+          "label": "Item ID",
+          "placeholder": "Enter NSI Item ID",
+          "screen_name": "MaintenanceScreen",
+          "section_title": "Add New Item",
+          "line_number": 632,
+          "id_generated": true,
+          "original_input_line": "<input \n                type=\"text\" \n                style={{ width: '100%', padding: '12px', border: '1px solid #ddd', borderRadius: '5px', boxSizing: 'border-box' }}\n                placeholder=\"Enter NSI Item ID\" \n              />"
+        },
+        {
+          "tsx_id": "posTrackingNumber",
+          "element_type": "input",
+          "input_type": "text",
+          "label": "POS Tracking Number",
+          "placeholder": "Enter POS tracking number",
+          "screen_name": "MaintenanceScreen",
+          "section_title": "Add New Item",
+          "line_number": 640,
+          "id_generated": true,
+          "original_input_line": "<input \n                type=\"text\" \n                style={{ width: '100%', padding: '12px', border: '1px solid #ddd', borderRadius: '5px', boxSizing: 'border-box' }}\n                placeholder=\"Enter POS tracking number\" \n              />"
+        },
+        {
+          "tsx_id": "destroyLogNumber",
+          "element_type": "input",
+          "input_type": "text",
+          "label": "Destroy Log Number",
+          "placeholder": "Enter destroy log number",
+          "screen_name": "MaintenanceScreen",
+          "line_number": 648,
+          "id_generated": true,
+          "original_input_line": "<input \n                type=\"text\" \n                style={{ width: '100%', padding: '12px', border: '1px solid #ddd', borderRadius: '5px', boxSizing: 'border-box' }}\n                placeholder=\"Enter destroy log number\" \n              />"
+        },
+        {
+          "tsx_id": "itemIdOrTrackingNumber",
+          "element_type": "input",
+          "input_type": "text",
+          "label": "Item ID or Tracking Number",
+          "placeholder": "Enter Item ID or tracking number",
+          "screen_name": "MaintenanceScreen",
+          "section_title": "Search Item",
+          "line_number": 680,
+          "id_generated": true,
+          "original_input_line": "<input \n                type=\"text\" \n                style={{ width: '100%', padding: '12px', border: '1px solid #ddd', borderRadius: '5px', boxSizing: 'border-box' }}\n                placeholder=\"Enter Item ID or tracking number\" \n              />"
+        },
+        {
+          "tsx_id": "itemId1",
+          "element_type": "input",
+          "input_type": "text",
+          "label": "Item ID",
+          "default_value": "NSI-001234",
+          "screen_name": "MaintenanceScreen",
+          "section_title": "Item #1 - NSI-001234",
+          "line_number": 721,
+          "id_generated": true,
+          "original_input_line": "<input \n                  type=\"text\" \n                  style={{ width: '100%', padding: '8px', border: '1px solid #ddd', borderRadius: '5px', background: '#f8f9fa', boxSizing: 'border-box' }}\n                  defaultValue=\"NSI-001234\" \n                  readOnly \n                />"
+        },
+        {
+          "tsx_id": "dept",
+          "element_type": "select",
+          "input_type": "select",
+          "label": "Dept",
+          "screen_name": "MaintenanceScreen",
+          "line_number": 730,
+          "id_generated": true,
+          "original_input_line": "<select style={{ width: '100%', padding: '8px', border: '1px solid #ddd', borderRadius: '5px', boxSizing: 'border-box' }} defaultValue=\"Electronics\">"
+        },
+        {
+          "tsx_id": "description",
+          "element_type": "input",
+          "input_type": "text",
+          "label": "Description",
+          "default_value": "Samsung 55 inch QLED TV - Cracked Screen",
+          "screen_name": "MaintenanceScreen",
+          "line_number": 739,
+          "id_generated": true,
+          "original_input_line": "<input \n                  type=\"text\" \n                  style={{ width: '100%', padding: '8px', border: '1px solid #ddd', borderRadius: '5px', boxSizing: 'border-box' }}\n                  defaultValue=\"Samsung 55 inch QLED TV - Cracked Screen\" \n                />"
+        },
+        {
+          "tsx_id": "quantity",
+          "element_type": "input",
+          "input_type": "number",
+          "label": "Quantity",
+          "default_value": "1",
+          "screen_name": "MaintenanceScreen",
+          "line_number": 747,
+          "id_generated": true,
+          "original_input_line": "<input \n                  type=\"number\" \n                  style={{ width: '100%', padding: '8px', border: '1px solid #ddd', borderRadius: '5px', boxSizing: 'border-box' }}\n                  defaultValue=\"1\" \n                  min=\"1\" \n                />"
+        },
+        {
+          "tsx_id": "unitSellPrice",
+          "element_type": "input",
+          "input_type": "number",
+          "label": "Unit Sell Price",
+          "default_value": "899.99",
+          "screen_name": "MaintenanceScreen",
+          "line_number": 756,
+          "id_generated": true,
+          "original_input_line": "<input \n                  type=\"number\" \n                  style={{ width: '100%', padding: '8px', border: '1px solid #ddd', borderRadius: '5px', boxSizing: 'border-box' }}\n                  defaultValue=\"899.99\" \n                  step=\"0.01\" \n                />"
+        },
+        {
+          "tsx_id": "extendedPrice",
+          "element_type": "input",
+          "input_type": "text",
+          "label": "Extended Price",
+          "default_value": "$899.99",
+          "screen_name": "MaintenanceScreen",
+          "line_number": 765,
+          "id_generated": true,
+          "original_input_line": "<input \n                  type=\"text\" \n                  style={{ width: '100%', padding: '8px', border: '1px solid #ddd', borderRadius: '5px', color: '#0D5DAB', fontWeight: '600', background: '#f8f9fa', boxSizing: 'border-box' }}\n                  defaultValue=\"$899.99\" \n                  readOnly \n                />"
+        },
+        {
+          "tsx_id": "documentType",
+          "element_type": "select",
+          "input_type": "select",
+          "label": "Document Type",
+          "screen_name": "MaintenanceScreen",
+          "line_number": 774,
+          "id_generated": true,
+          "original_input_line": "<select style={{ width: '100%', padding: '8px', border: '1px solid #ddd', borderRadius: '5px', boxSizing: 'border-box' }}>"
+        }
+      ],
+      "handlers": [
+        {
+          "function_name": "showNotification",
+          "trigger_element": "button",
+          "button_text": "{hazmatOnlyMode ? 'Show All Items' : 'Show Hazmat Only'}",
+          "screen_name": "MaintenanceScreen",
+          "line_number": 589,
+          "is_stub": true
+        },
+        {
+          "function_name": "showNotification",
+          "trigger_element": "button",
+          "button_text": "Scan",
+          "screen_name": "MaintenanceScreen",
+          "line_number": 654,
+          "is_stub": true
+        },
+        {
+          "function_name": "showNotification",
+          "trigger_element": "button",
+          "button_text": "Add Item",
+          "screen_name": "MaintenanceScreen",
+          "line_number": 660,
+          "is_stub": true
+        },
+        {
+          "function_name": "showNotification",
+          "trigger_element": "button",
+          "button_text": "Search Item",
+          "screen_name": "MaintenanceScreen",
+          "line_number": 686,
+          "is_stub": true
+        },
+        {
+          "function_name": "showNotification",
+          "trigger_element": "button",
+          "button_text": "Reverse",
+          "screen_name": "MaintenanceScreen",
+          "line_number": 710,
+          "is_stub": true
+        },
+        {
+          "function_name": "showModal",
+          "trigger_element": "button",
+          "button_text": "Shipping Documents",
+          "screen_name": "MaintenanceScreen",
+          "line_number": 786,
+          "is_stub": false
+        },
+        {
+          "function_name": "showModal",
+          "trigger_element": "button",
+          "button_text": "Logline Documents",
+          "screen_name": "MaintenanceScreen",
+          "line_number": 800,
+          "is_stub": false
+        },
+        {
+          "function_name": "showNotification",
+          "trigger_element": "button",
+          "button_text": "Void Logline",
+          "screen_name": "MaintenanceScreen",
+          "line_number": 814,
+          "is_stub": true
+        },
+        {
+          "function_name": "showNotification",
+          "trigger_element": "button",
+          "button_text": "Reverse",
+          "screen_name": "MaintenanceScreen",
+          "line_number": 839,
+          "is_stub": true
+        },
+        {
+          "function_name": "showModal",
+          "trigger_element": "button",
+          "button_text": "Hazmat Documents",
+          "screen_name": "MaintenanceScreen",
+          "line_number": 867,
+          "is_stub": false
+        },
+        {
+          "function_name": "showModal",
+          "trigger_element": "button",
+          "button_text": "Shipping Documents",
+          "screen_name": "MaintenanceScreen",
+          "line_number": 883,
+          "is_stub": false
+        },
+        {
+          "function_name": "showNotification",
+          "trigger_element": "button",
+          "button_text": "Save All Items",
+          "screen_name": "MaintenanceScreen",
+          "line_number": 900,
+          "is_stub": true
+        },
+        {
+          "function_name": "showNotification",
+          "trigger_element": "button",
+          "button_text": "Submit for Approval",
+          "screen_name": "MaintenanceScreen",
+          "line_number": 906,
+          "is_stub": true
+        },
+        {
+          "function_name": "showNotification",
+          "trigger_element": "button",
+          "button_text": "Export to Excel",
+          "screen_name": "MaintenanceScreen",
+          "line_number": 912,
+          "is_stub": true
+        }
+      ]
+    },
+    {
+      "component_name": "InquiryScreen",
+      "line_start": 923,
+      "line_end": 1099,
+      "fields": [
+        {
+          "tsx_id": "locationSelected",
+          "element_type": "select",
+          "input_type": "select",
+          "label": "Location Selected",
+          "screen_name": "InquiryScreen",
+          "section_title": "Search & Filter Options",
+          "line_number": 948,
+          "id_generated": true,
+          "original_input_line": "<select style={{ width: '100%', padding: '8px', border: '1px solid #ddd', borderRadius: '5px', boxSizing: 'border-box' }}>"
+        },
+        {
+          "tsx_id": "statusSelected",
+          "element_type": "select",
+          "input_type": "select",
+          "label": "Status Selected",
+          "screen_name": "InquiryScreen",
+          "section_title": "Search & Filter Options",
+          "line_number": 958,
+          "id_generated": true,
+          "original_input_line": "<select style={{ width: '100%', padding: '8px', border: '1px solid #ddd', borderRadius: '5px', boxSizing: 'border-box' }}>"
+        },
+        {
+          "tsx_id": "vendorSelected",
+          "element_type": "select",
+          "input_type": "select",
+          "label": "Vendor Selected",
+          "screen_name": "InquiryScreen",
+          "line_number": 968,
+          "id_generated": true,
+          "original_input_line": "<select style={{ width: '100%', padding: '8px', border: '1px solid #ddd', borderRadius: '5px', boxSizing: 'border-box' }}>"
+        },
+        {
+          "tsx_id": "dispositionSelected",
+          "element_type": "select",
+          "input_type": "select",
+          "label": "Disposition Selected",
+          "screen_name": "InquiryScreen",
+          "line_number": 978,
+          "id_generated": true,
+          "original_input_line": "<select style={{ width: '100%', padding: '8px', border: '1px solid #ddd', borderRadius: '5px', boxSizing: 'border-box' }}>"
+        },
+        {
+          "tsx_id": "dateFrom",
+          "element_type": "input",
+          "input_type": "date",
+          "label": "Date From",
+          "screen_name": "InquiryScreen",
+          "line_number": 989,
+          "id_generated": true,
+          "original_input_line": "<input type=\"date\" style={{ width: '100%', padding: '8px', border: '1px solid #ddd', borderRadius: '5px', boxSizing: 'border-box' }} />"
+        },
+        {
+          "tsx_id": "dateTo",
+          "element_type": "input",
+          "input_type": "date",
+          "label": "Date To",
+          "screen_name": "InquiryScreen",
+          "line_number": 993,
+          "id_generated": true,
+          "original_input_line": "<input type=\"date\" style={{ width: '100%', padding: '8px', border: '1px solid #ddd', borderRadius: '5px', boxSizing: 'border-box' }} />"
+        }
+      ],
+      "handlers": [
+        {
+          "function_name": "showNotification",
+          "trigger_element": "button",
+          "button_text": "Export Results",
+          "screen_name": "InquiryScreen",
+          "line_number": 934,
+          "is_stub": true
+        },
+        {
+          "function_name": "showNotification",
+          "trigger_element": "button",
+          "button_text": "Search",
+          "screen_name": "InquiryScreen",
+          "line_number": 997,
+          "is_stub": true
+        },
+        {
+          "function_name": "showNotification",
+          "trigger_element": "button",
+          "button_text": "\ufe0f Clear Filters",
+          "screen_name": "InquiryScreen",
+          "line_number": 1003,
+          "is_stub": true
+        }
+      ]
+    },
+    {
+      "component_name": "SalvageScreen",
+      "line_start": 1102,
+      "line_end": 1212,
+      "fields": [
+        {
+          "tsx_id": "returnCenterNumber",
+          "element_type": "input",
+          "input_type": "text",
+          "label": "Return Center Number",
+          "placeholder": "Enter return center number",
+          "screen_name": "SalvageScreen",
+          "section_title": "Search & Filter Options",
+          "line_number": 1124,
+          "id_generated": true,
+          "original_input_line": "<input type=\"text\" style={{ width: '100%', padding: '8px', border: '1px solid #ddd', borderRadius: '5px', boxSizing: 'border-box' }} placeholder=\"Enter return center number\" />"
+        },
+        {
+          "tsx_id": "receiptOrInmarOrderNumber",
+          "element_type": "input",
+          "input_type": "text",
+          "label": "Receipt or Inmar Order Number",
+          "placeholder": "Enter order number",
+          "screen_name": "SalvageScreen",
+          "section_title": "Search & Filter Options",
+          "line_number": 1128,
+          "id_generated": true,
+          "original_input_line": "<input type=\"text\" style={{ width: '100%', padding: '8px', border: '1px solid #ddd', borderRadius: '5px', boxSizing: 'border-box' }} placeholder=\"Enter order number\" />"
+        },
+        {
+          "tsx_id": "fromDate",
+          "element_type": "input",
+          "input_type": "text",
+          "label": "From Date",
+          "default_value": "05/01/2025",
+          "screen_name": "SalvageScreen",
+          "section_title": "Search & Filter Options",
+          "line_number": 1132,
+          "id_generated": true,
+          "original_input_line": "<input type=\"text\" style={{ width: '100%', padding: '8px', border: '1px solid #ddd', borderRadius: '5px', boxSizing: 'border-box' }} defaultValue=\"05/01/2025\" />"
+        },
+        {
+          "tsx_id": "toDate",
+          "element_type": "input",
+          "input_type": "text",
+          "label": "To Date",
+          "default_value": "06/03/2025",
+          "screen_name": "SalvageScreen",
+          "line_number": 1136,
+          "id_generated": true,
+          "original_input_line": "<input type=\"text\" style={{ width: '100%', padding: '8px', border: '1px solid #ddd', borderRadius: '5px', boxSizing: 'border-box' }} defaultValue=\"06/03/2025\" />"
+        }
+      ],
+      "handlers": [
+        {
+          "function_name": "showNotification",
+          "trigger_element": "button",
+          "button_text": "Search",
+          "screen_name": "SalvageScreen",
+          "line_number": 1140,
+          "is_stub": true
+        },
+        {
+          "function_name": "showNotification",
+          "trigger_element": "button",
+          "button_text": "\ufe0f Clear Filters",
+          "screen_name": "SalvageScreen",
+          "line_number": 1141,
+          "is_stub": true
+        }
+      ]
+    },
+    {
+      "component_name": "renderScreen",
+      "line_start": 1215,
+      "line_end": 1270,
+      "fields": [],
+      "handlers": []
+    }
+  ],
+  "state_variables": [
+    {
+      "name": "currentScreen",
+      "has_mock_data": false,
+      "initial_value_type": "primitive"
+    },
+    {
+      "name": "notification",
+      "has_mock_data": false,
+      "initial_value_type": "primitive"
+    },
+    {
+      "name": "modal",
+      "has_mock_data": false,
+      "initial_value_type": "primitive"
+    },
+    {
+      "name": "showPendingApprovalsView",
+      "has_mock_data": false,
+      "initial_value_type": "primitive"
+    },
+    {
+      "name": "maintenanceMode",
+      "has_mock_data": false,
+      "initial_value_type": "primitive"
+    },
+    {
+      "name": "auditQueueMode",
+      "has_mock_data": false,
+      "initial_value_type": "primitive"
+    },
+    {
+      "name": "hazmatOnlyMode",
+      "has_mock_data": false,
+      "initial_value_type": "primitive"
+    },
+    {
+      "name": "worklistItems",
+      "has_mock_data": true,
+      "mock_data_line_start": 13,
+      "mock_data_line_end": 56,
+      "initial_value_type": "mock_data"
+    }
+  ],
+  "top_level_handlers": [
+    {
+      "function_name": "NSIManagementSystem",
+      "trigger_element": "function",
+      "button_text": null,
+      "screen_name": "top_level",
+      "line_number": 3,
+      "is_stub": false
+    },
+    {
+      "function_name": "showNotification",
+      "trigger_element": "function",
+      "button_text": null,
+      "screen_name": "top_level",
+      "line_number": 58,
+      "is_stub": false
+    },
+    {
+      "function_name": "showModal",
+      "trigger_element": "function",
+      "button_text": null,
+      "screen_name": "top_level",
+      "line_number": 65,
+      "is_stub": false
+    },
+    {
+      "function_name": "closeModal",
+      "trigger_element": "function",
+      "button_text": null,
+      "screen_name": "top_level",
+      "line_number": 69,
+      "is_stub": false
+    },
+    {
+      "function_name": "generateTrackingNumber",
+      "trigger_element": "function",
+      "button_text": null,
+      "screen_name": "top_level",
+      "line_number": 78,
+      "is_stub": false
+    },
+    {
+      "function_name": "addToWorklist",
+      "trigger_element": "function",
+      "button_text": null,
+      "screen_name": "top_level",
+      "line_number": 85,
+      "is_stub": true
+    },
+    {
+      "function_name": "getFilteredWorklistItems",
+      "trigger_element": "function",
+      "button_text": null,
+      "screen_name": "top_level",
+      "line_number": 122,
+      "is_stub": false
+    }
+  ],
+  "mock_data_locations": [
+    {
+      "variable_name": "worklistItems",
+      "line_start": 13,
+      "line_end": 56,
+      "action": "replace_with_empty_array"
+    }
+  ],
+  "source_file": "Inputs/ui_react_component.tsx",
+  "ac_coverage": {
+    "User Story 1": {
+      "AC1": {
+        "title": "Successful Scan and Item Addition",
+        "total_required_fields": 11,
+        "found_in_tsx": 6,
+        "missing_count": 5,
+        "coverage_percent": 55,
+        "found_fields": [
+          "POS Tracking Number",
+          "Item ID",
+          "Item Description",
+          "Quantity",
+          "Location",
+          "Sell Price"
+        ],
+        "missing_fields": [
+          "Department Number",
+          "Disposition Type",
+          "On Hand Inventory",
+          "Vendor Name",
+          "Add to Worklist"
+        ]
+      },
+      "AC2": {
+        "title": "Invalid Tracking Number Handling",
+        "total_required_fields": 11,
+        "found_in_tsx": 6,
+        "missing_count": 5,
+        "coverage_percent": 55,
+        "found_fields": [
+          "POS Tracking Number",
+          "Item ID",
+          "Item Description",
+          "Quantity",
+          "Location",
+          "Sell Price"
+        ],
+        "missing_fields": [
+          "Department Number",
+          "Disposition Type",
+          "On Hand Inventory",
+          "Vendor Name",
+          "Add to Worklist"
+        ]
+      },
+      "AC3": {
+        "title": "Duplicate Item Prevention",
+        "total_required_fields": 11,
+        "found_in_tsx": 6,
+        "missing_count": 5,
+        "coverage_percent": 55,
+        "found_fields": [
+          "POS Tracking Number",
+          "Item ID",
+          "Item Description",
+          "Quantity",
+          "Location",
+          "Sell Price"
+        ],
+        "missing_fields": [
+          "Department Number",
+          "Disposition Type",
+          "On Hand Inventory",
+          "Vendor Name",
+          "Add to Worklist"
+        ]
+      },
+      "AC4": {
+        "title": "Auto-Population of Item Details",
+        "total_required_fields": 11,
+        "found_in_tsx": 6,
+        "missing_count": 5,
+        "coverage_percent": 55,
+        "found_fields": [
+          "POS Tracking Number",
+          "Item ID",
+          "Item Description",
+          "Quantity",
+          "Location",
+          "Sell Price"
+        ],
+        "missing_fields": [
+          "Department Number",
+          "Disposition Type",
+          "On Hand Inventory",
+          "Vendor Name",
+          "Add to Worklist"
+        ]
+      },
+      "AC5": {
+        "title": "Manual Entry Fallback",
+        "total_required_fields": 11,
+        "found_in_tsx": 6,
+        "missing_count": 5,
+        "coverage_percent": 55,
+        "found_fields": [
+          "POS Tracking Number",
+          "Item ID",
+          "Item Description",
+          "Quantity",
+          "Location",
+          "Sell Price"
+        ],
+        "missing_fields": [
+          "Department Number",
+          "Disposition Type",
+          "On Hand Inventory",
+          "Vendor Name",
+          "Add to Worklist"
+        ]
+      },
+      "AC6": {
+        "title": "Scan Feedback and User Experience",
+        "total_required_fields": 11,
+        "found_in_tsx": 6,
+        "missing_count": 5,
+        "coverage_percent": 55,
+        "found_fields": [
+          "POS Tracking Number",
+          "Item ID",
+          "Item Description",
+          "Quantity",
+          "Location",
+          "Sell Price"
+        ],
+        "missing_fields": [
+          "Department Number",
+          "Disposition Type",
+          "On Hand Inventory",
+          "Vendor Name",
+          "Add to Worklist"
+        ]
+      },
+      "AC7": {
+        "title": "Required Field Validation",
+        "total_required_fields": 11,
+        "found_in_tsx": 6,
+        "missing_count": 5,
+        "coverage_percent": 55,
+        "found_fields": [
+          "POS Tracking Number",
+          "Item ID",
+          "Item Description",
+          "Quantity",
+          "Location",
+          "Sell Price"
+        ],
+        "missing_fields": [
+          "Department Number",
+          "Disposition Type",
+          "On Hand Inventory",
+          "Vendor Name",
+          "Add to Worklist"
+        ]
+      }
+    },
+    "User Story 2": {
+      "AC1": {
+        "title": "Start Workflow for Salvage Item",
+        "total_required_fields": 5,
+        "found_in_tsx": 3,
+        "missing_count": 2,
+        "coverage_percent": 60,
+        "found_fields": [
+          "Item ID",
+          "Disposition",
+          "Status"
+        ],
+        "missing_fields": [
+          "NSI ID",
+          "Start Workflow"
+        ]
+      },
+      "AC2": {
+        "title": "System Auto-Routing (Background Process)",
+        "total_required_fields": 5,
+        "found_in_tsx": 3,
+        "missing_count": 2,
+        "coverage_percent": 60,
+        "found_fields": [
+          "Item ID",
+          "Disposition",
+          "Status"
+        ],
+        "missing_fields": [
+          "NSI ID",
+          "Start Workflow"
+        ]
+      },
+      "AC3": {
+        "title": "Workflow Confirmation",
+        "total_required_fields": 5,
+        "found_in_tsx": 3,
+        "missing_count": 2,
+        "coverage_percent": 60,
+        "found_fields": [
+          "Item ID",
+          "Disposition",
+          "Status"
+        ],
+        "missing_fields": [
+          "NSI ID",
+          "Start Workflow"
+        ]
+      }
+    },
+    "User Story 3": {
+      "AC1": {
+        "title": "Document Category Selection",
+        "total_required_fields": 3,
+        "found_in_tsx": 0,
+        "missing_count": 3,
+        "coverage_percent": 0,
+        "found_fields": [],
+        "missing_fields": [
+          "Document Category",
+          "Generated Document",
+          "Print"
+        ]
+      },
+      "AC2": {
+        "title": "Document Modal Opening",
+        "total_required_fields": 3,
+        "found_in_tsx": 0,
+        "missing_count": 3,
+        "coverage_percent": 0,
+        "found_fields": [],
+        "missing_fields": [
+          "Document Category",
+          "Generated Document",
+          "Print"
+        ]
+      },
+      "AC3": {
+        "title": "RD Document Printing",
+        "total_required_fields": 3,
+        "found_in_tsx": 0,
+        "missing_count": 3,
+        "coverage_percent": 0,
+        "found_fields": [],
+        "missing_fields": [
+          "Document Category",
+          "Generated Document",
+          "Print"
+        ]
+      }
+    },
+    "User Story 4": {
+      "AC1": {
+        "title": "Automatic Master Shipment Generation",
+        "total_required_fields": 5,
+        "found_in_tsx": 0,
+        "missing_count": 5,
+        "coverage_percent": 0,
+        "found_fields": [],
+        "missing_fields": [
+          "Shipment Number",
+          "BOL (Bill of Lading)",
+          "Shipment Label",
+          "Logline",
+          "Process Logline"
+        ]
+      },
+      "AC2": {
+        "title": "Shipping Documents Available",
+        "total_required_fields": 5,
+        "found_in_tsx": 0,
+        "missing_count": 5,
+        "coverage_percent": 0,
+        "found_fields": [],
+        "missing_fields": [
+          "Shipment Number",
+          "BOL (Bill of Lading)",
+          "Shipment Label",
+          "Logline",
+          "Process Logline"
+        ]
+      },
+      "AC3": {
+        "title": "BOL Printing",
+        "total_required_fields": 5,
+        "found_in_tsx": 0,
+        "missing_count": 5,
+        "coverage_percent": 0,
+        "found_fields": [],
+        "missing_fields": [
+          "Shipment Number",
+          "BOL (Bill of Lading)",
+          "Shipment Label",
+          "Logline",
+          "Process Logline"
+        ]
+      },
+      "AC4": {
+        "title": "Shipment Label Printing",
+        "total_required_fields": 5,
+        "found_in_tsx": 0,
+        "missing_count": 5,
+        "coverage_percent": 0,
+        "found_fields": [],
+        "missing_fields": [
+          "Shipment Number",
+          "BOL (Bill of Lading)",
+          "Shipment Label",
+          "Logline",
+          "Process Logline"
+        ]
+      },
+      "AC5": {
+        "title": "Logline Documents Printing",
+        "total_required_fields": 5,
+        "found_in_tsx": 0,
+        "missing_count": 5,
+        "coverage_percent": 0,
+        "found_fields": [],
+        "missing_fields": [
+          "Shipment Number",
+          "BOL (Bill of Lading)",
+          "Shipment Label",
+          "Logline",
+          "Process Logline"
+        ]
+      },
+      "AC6": {
+        "title": "Complete Processing Confirmation",
+        "total_required_fields": 5,
+        "found_in_tsx": 0,
+        "missing_count": 5,
+        "coverage_percent": 0,
+        "found_fields": [],
+        "missing_fields": [
+          "Shipment Number",
+          "BOL (Bill of Lading)",
+          "Shipment Label",
+          "Logline",
+          "Process Logline"
+        ]
+      }
+    },
+    "User Story 5": {
+      "AC1": {
+        "title": "Reverse button on",
+        "total_required_fields": 6,
+        "found_in_tsx": 3,
+        "missing_count": 3,
+        "coverage_percent": 50,
+        "found_fields": [
+          "Item ID",
+          "Status",
+          "Disposition"
+        ],
+        "missing_fields": [
+          "NSI ID",
+          "Reverse",
+          "Start Workflow"
+        ]
+      },
+      "AC2": {
+        "title": "Allow change disposition and restart the workflow",
+        "total_required_fields": 6,
+        "found_in_tsx": 3,
+        "missing_count": 3,
+        "coverage_percent": 50,
+        "found_fields": [
+          "Item ID",
+          "Status",
+          "Disposition"
+        ],
+        "missing_fields": [
+          "NSI ID",
+          "Reverse",
+          "Start Workflow"
+        ]
+      }
+    }
+  }
+}
